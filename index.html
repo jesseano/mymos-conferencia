@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Conferência de Pedido</title>
+</head>
+<body>
+
+<h2>Conferência de Pedido</h2>
+
+<input type="text" id="pedido" placeholder="Número do pedido" />
+<button onclick="buscarPedido()">Buscar</button>
+
+<div id="resultado"></div>
+
+<script>
+async function buscarPedido() {
+  const numero = document.getElementById("pedido").value;
+  document.getElementById("resultado").innerHTML = "Buscando pedido...";
+}
+</script>
+
+</body>
+</html>
